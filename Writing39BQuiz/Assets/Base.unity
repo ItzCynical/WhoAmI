@@ -785,8 +785,8 @@ MonoBehaviour:
       important than a single life
     choice2Answer: This answer is based on emotions, drawing on the importance of
       that one person you know opposed to the ten random people
-  - scenario: How much more important is obedience to authority over expression of
-      oneself?
+  - scenario: How important is obedience to authority compared to expression of one's
+      self?
     choice1: Authority should be respected at the cost of individual freedom
     choice2: One's curiosity and expression of self should outweigh the constraints
       placed by authority
