@@ -33,19 +33,26 @@ public class GameManager : MonoBehaviour {
 	[SerializeField]
 	private float timeBetweenQuestions = 1f;
 
+	private string good = "good";
+	private string bad = "bad";
 
 	void Start() 
 	{
-		if (unansweredQuestions == null || unansweredQuestions.Count == 0) 
+		if (unansweredQuestions == null) 
 		{
 			unansweredQuestions = questions.ToList<Question> ();
+			PlayerPrefs.SetInt(good, 0);
+			PlayerPrefs.SetInt(bad, 0);
 		}
-
+		
 		SetCurrentQuestion();
 	}
 
 	void SetCurrentQuestion ()
 	{
+		Debug.Log("Good: "+ PlayerPrefs.GetInt(good).ToString());
+		Debug.Log("Bad: "+ PlayerPrefs.GetInt(bad).ToString());
+
 		int randomQuestionIndex = Random.Range (0, unansweredQuestions.Count);
 		currentQuestion = unansweredQuestions [randomQuestionIndex];
 
@@ -71,6 +78,9 @@ public class GameManager : MonoBehaviour {
 	{
 		Debug.Log ("Choice 1");
 
+		int n = PlayerPrefs.GetInt(good);
+		PlayerPrefs.SetInt(good, n+1);
+
 		animator.SetTrigger ("Choice1");
 		StartCoroutine (TransitionToNextQuestion ());
 	}
@@ -78,6 +88,9 @@ public class GameManager : MonoBehaviour {
 	public void UserSelectChoice2()
 	{
 		Debug.Log ("Choice 2");
+
+		int n = PlayerPrefs.GetInt(bad);
+		PlayerPrefs.SetInt(bad, n+1);
 
 		animator.SetTrigger ("Choice2");
 		StartCoroutine (TransitionToNextQuestion ());
