@@ -22,6 +22,15 @@ public class GameManager : MonoBehaviour {
 	private Text choice2Text;
 
 	[SerializeField]
+	private Text choice1Answer;
+
+	[SerializeField]
+	private Text choice2Answer;
+
+	[SerializeField]
+	private Animator animator;
+
+	[SerializeField]
 	private float timeBetweenQuestions = 1f;
 
 
@@ -43,7 +52,8 @@ public class GameManager : MonoBehaviour {
 		scenarioText.text = currentQuestion.scenario;
 		choice1Text.text = currentQuestion.choice1;
 		choice2Text.text = currentQuestion.choice2;
-
+		choice1Answer.text = currentQuestion.choice1Answer;
+		choice2Answer.text = currentQuestion.choice2Answer;
 
 	}
 
@@ -57,8 +67,19 @@ public class GameManager : MonoBehaviour {
 
 	} 
 
-	public void UserSelectTrue()
+	public void UserSelectChoice1()
 	{
-		
+		Debug.Log ("Choice 1");
+
+		animator.SetTrigger ("Choice1");
+		StartCoroutine (TransitionToNextQuestion ());
+	}
+
+	public void UserSelectChoice2()
+	{
+		Debug.Log ("Choice 2");
+
+		animator.SetTrigger ("Choice2");
+		StartCoroutine (TransitionToNextQuestion ());
 	}
 }
