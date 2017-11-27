@@ -620,7 +620,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 7, y: -87.475006}
+  m_AnchoredPosition: {x: 7, y: -87.475}
   m_SizeDelta: {x: -1, y: -174.95}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &791107918
@@ -772,7 +772,7 @@ MonoBehaviour:
       other and comes across as unfaithful
   - scenario: Everyone in town is invited to a baby shower except you. How do you
       feel?
-    choice1: Understanding, accepting, and forgiving of being excluded from the event
+    choice1: Accept that you have been excluded or forgotten and not take it to heart
     choice2: Infuriated, confused, and/or irritated about being forgotten by others
     choice1Answer: You maintain a happy-go-lucky nature and are not affected
     choice2Answer: A realistic response to being ostracized by peers
@@ -800,7 +800,7 @@ MonoBehaviour:
   choice1Answer: {fileID: 598319850}
   choice2Answer: {fileID: 791107920}
   animator: {fileID: 1217785376}
-  timeBetweenQuestions: 1.5
+  timeBetweenQuestions: 2.5
 --- !u!4 &899508233
 Transform:
   m_ObjectHideFlags: 0

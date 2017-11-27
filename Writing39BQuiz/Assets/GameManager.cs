@@ -67,10 +67,19 @@ public class GameManager : MonoBehaviour {
 	IEnumerator TransitionToNextQuestion () {
 		unansweredQuestions.Remove (currentQuestion);
 
-		yield return new WaitForSeconds (timeBetweenQuestions);
+		if (unansweredQuestions.Count <= 0) {
 
-		SceneManager.LoadScene (SceneManager.GetActiveScene ().buildIndex);
+			yield return new WaitForSeconds (timeBetweenQuestions);
+			
+			SceneManager.LoadScene("Results");
 
+		}
+		else {
+
+			yield return new WaitForSeconds (timeBetweenQuestions);
+
+			SceneManager.LoadScene (SceneManager.GetActiveScene ().buildIndex);
+		}
 
 	} 
 
