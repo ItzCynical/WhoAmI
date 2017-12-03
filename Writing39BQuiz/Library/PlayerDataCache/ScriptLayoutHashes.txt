@@ -128,6 +128,7 @@ e45161899efe8cad5875bda2ebdec31d Assembly-CSharp.dll:MaterialUI.ShadowSnap
 e5d9ab3e3afae89fd535a121729c2aad Assembly-CSharp.dll:.Example05
 e024402a708ba845635b872ee0cb1f0d Assembly-CSharp.dll:MaterialUI.Toaster
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:MaterialUI.MaterialUIScaler
+61f2012b3a9d3f8da6da805dd3731181 Assembly-CSharp.dll:.ResultsManager
 8bc857a757347479151849a84f6550ce Assembly-CSharp.dll:MaterialUI.ShadowGen
 64be944bd68d5c79d2df00042b272509 Assembly-CSharp.dll:MaterialUI.ShadowAnim
 8d9d08018be8a9d20f0bc1d0c8c9e4a7 Assembly-CSharp.dll:MaterialUI.RadioConfig
@@ -165,6 +166,6 @@ c2275a8bfbb9f9942cad75ecdfded41d UnityEngine.HoloLens.dll:UnityEngine.VR.WSA.Spa
 8f9ca3035a51ae9fa67a3f8ceed38ca2 Assembly-CSharp.dll:MaterialUI.ShadowConfig
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:MaterialUI.ToggleConfig
 403fcf569ca34c9e12ec24b843c7a1d1 Assembly-CSharp.dll:.Example04
-efbff8081e8b52405802250734e3027c Assembly-CSharp.dll:.GameManager
+7766a55a4b9cd2047756aaf11534b0a2 Assembly-CSharp.dll:.GameManager
 a885b5718618457f4959f03284f3d6c2 Assembly-CSharp.dll:MaterialUI.TextInputLine
 5ab1677d31916f29db021c86cd24d748 Assembly-CSharp.dll:MaterialUI.MenuArrowAnim

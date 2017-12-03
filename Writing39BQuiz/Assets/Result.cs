@@ -6,6 +6,7 @@ using UnityEngine;
 public class Result {
 
 	public string character;
+	public Texture image;
 	public int alignment; //0 = villain 1 = hero
 	public string description;
 }

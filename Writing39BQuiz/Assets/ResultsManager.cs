@@ -23,6 +23,9 @@ public class ResultsManager : MonoBehaviour {
 	[SerializeField]
 	private Text descriptionText;
 
+	[SerializeField]
+	private GameObject resultBackground;
+
 
 	private string good = "good";
 	private string bad = "bad";
@@ -64,7 +67,7 @@ public class ResultsManager : MonoBehaviour {
 
 		characterText.text = currentResult.character;
 		descriptionText.text = currentResult.description;
-
+		resultBackground.GetComponent<RawImage>().texture = currentResult.image;
 	}
 
 	void setVillain () {
@@ -74,6 +77,7 @@ public class ResultsManager : MonoBehaviour {
 
 		characterText.text = currentResult.character;
 		descriptionText.text = currentResult.description;
+		resultBackground.GetComponent<RawImage>().texture = currentResult.image;
 	}
 
 	void setBoth () {
@@ -83,6 +87,7 @@ public class ResultsManager : MonoBehaviour {
 
 		characterText.text = currentResult.character;
 		descriptionText.text = currentResult.description;
+		resultBackground.GetComponent<RawImage>().texture = currentResult.image;
 	}
 
 

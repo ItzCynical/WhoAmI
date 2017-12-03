@@ -345,7 +345,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.12941177, g: 0.12941177, b: 0.12941177, a: 1}
+  m_BackGroundColor: {r: 1, g: 1, b: 1, a: 1}
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
@@ -561,7 +561,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.8745098}
+  m_Color: {r: 0, g: 0, b: 0, a: 0.8745098}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -620,7 +620,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 7, y: -87.475}
+  m_AnchoredPosition: {x: 7, y: -87.475006}
   m_SizeDelta: {x: -1, y: -174.95}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &791107918
@@ -670,7 +670,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.8745098}
+  m_Color: {r: 0, g: 0, b: 0, a: 0.8745098}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -730,70 +730,125 @@ MonoBehaviour:
       into your house. After calling the police, what do you do?
     choice1: Ignore the sound and remain in the your room and hide
     choice2: You confront the intruder, ready to fight them off until the cops come
-    choice1Answer: You prove to be careful and approach the situation properly.
-    choice2Answer: You act aggressively and approach the situation recklessly.
-  - scenario: While out for a walk, a tree falls down and is now blocking your path.
-      What do you do about it?
+    choice1Answer: Smart choice, but still a scaredy cat!
+    choice1increment: 0
+    choice2Answer: 
+    choice2increment: 0
+  - scenario: While out for a walk, a large tree falls down in front of you and is
+      now blocking your path. What do you do about it?
     choice1: Look around and find a new path to avoid the fallen tree
     choice2: Make your own path by crossing over the fallen tree
-    choice1Answer: You seek to avoid adversity and find alternative ways to proceed
-      through challenges
-    choice2Answer: You confront adversity head on and show qualities of resilience
-      through setbacks
-  - scenario: You have the day off of school/work, would you rather spend the day
-      indoors or outdoors?
+    choice1Answer: 
+    choice1increment: 0
+    choice2Answer: 
+    choice2increment: 0
+  - scenario: 'You have the day off of school/work, would you rather spend the day
+      indoors or outdoors? '
     choice1: Outdoors
     choice2: Indoors
-    choice1Answer: You like to socialize and spend the day activly exploring what
-      is around you
-    choice2Answer: You prefer the calm nature of your own room or house and prefer
-      your own pace
+    choice1Answer: 
+    choice1increment: 0
+    choice2Answer: 
+    choice2increment: 0
   - scenario: Your parents have pressing matters in another city and have to leave
       you alone for a week. What is the first thing you tell them?
-    choice1: '"Take care" or "Be safe" '
-    choice2: '"Bring back some souvenirs"'
-    choice1Answer: You show that you are considerate and caring towards their well-being
-    choice2Answer: You show that you have materialistic desires that outweigh concern
-      for their safety
+    choice1: '"Take care" or "Be safe"  '
+    choice2: '"Bring back some souvenirs" '
+    choice1Answer: 
+    choice1increment: 0
+    choice2Answer: 
+    choice2increment: 0
   - scenario: After cooking a meal, you find that children you've never met have found
       their way inside your house and stole the food you made. What do you do?
     choice1: You disregard the children and proceed to make more food for yourself.
     choice2: You reprimand the children for stealing, take back your food, & scare
       them off
-    choice1Answer: You reinforce the notion that kids can get away with stealing
-    choice2Answer: You teach the children that stealing is not okay but come off as
-      a villain to them
-  - scenario: You discover that your significant other may be hiding something from
+    choice1Answer: Haha enjoy your childhood while you can!
+    choice1increment: 0
+    choice2Answer: Haha serves them right, them darn rascals!
+    choice2increment: 0
+  - scenario: You believe that your significant other may be hiding something from
       you, but you have no proof. What do you do?
     choice1: Trust that they will reveal it to you when they are ready
-    choice2: 'Confront them about your baseless suspicions '
-    choice1Answer: You present unwavering trust towards your companion
-    choice2Answer: Your curiosity trumps the trust that you share with your significant
-      other and comes across as unfaithful
-  - scenario: Everyone in town is invited to a baby shower except you. How do you
-      feel?
-    choice1: Accept that you have been excluded or forgotten and not take it to heart
-    choice2: Infuriated, confused, and/or irritated about being forgotten by others
-    choice1Answer: You maintain a happy-go-lucky nature and are not affected
-    choice2Answer: A realistic response to being ostracized by peers
-  - scenario: If you had the power to do so, who would you save?
-    choice1: Ten random people you don't know at the cost of someone who is close
-      to you
-    choice2: Someone who is close to you at the cost of ten random people you don't
-      know
-    choice1Answer: You chose the logical answer, deducing that more lives are more
-      important than a single life
-    choice2Answer: This answer is based on emotions, drawing on the importance of
-      that one person you know opposed to the ten random people
+    choice2: Confront them about your suspicions and have an honest conversation
+    choice1Answer: 
+    choice1increment: 0
+    choice2Answer: 
+    choice2increment: 0
+  - scenario: 'You see one of your friends start a fight with someone else. What do
+      you do? '
+    choice1: 'Try to de-escalate the situation '
+    choice2: 'Join your friend to help them out in this brawl '
+    choice1Answer: 
+    choice1increment: 0
+    choice2Answer: 
+    choice2increment: 1
+  - scenario: Your friend gets seriously injured because you held him back and the
+      other person walks away before other people can catch him. What do you do?
+    choice1: 'Stay to tend to your friends wounds and wait for an ambulance '
+    choice2: 'Chase after the person and tackle him down to the ground '
+    choice1Answer: 
+    choice1increment: 1
+    choice2Answer: 
+    choice2increment: 1
+  - scenario: The person you and your friend beat up is gravely wounded. You and your
+      friend run off before the ambulance gets there.
+    choice1: 'Do you regret your actions and reprimand your friend for starting a
+      fight? '
+    choice2: 'Take pride in the damage you and your friend have done? '
+    choice1Answer: 
+    choice1increment: 0
+    choice2Answer: 
+    choice2increment: 0
+  - scenario: 'Everyone in town is invited to a baby shower except you. How do you
+      feel? '
+    choice1: 'Accept that you have been excluded or forgotten and not take it to heart '
+    choice2: 'Infuriated, confused, and/or irritated about being forgotten by others '
+    choice1Answer: "It\u2019s brave that you don\u2019t take it personally"
+    choice1increment: 0
+    choice2Answer: 
+    choice2increment: 0
   - scenario: How important is obedience to authority compared to expression of one's
       self?
-    choice1: Authority should be respected at the cost of individual freedom
-    choice2: One's curiosity and expression of self should outweigh the constraints
-      placed by authority
-    choice1Answer: 'Fairy tales convey this message of obediece and blind faith toward
-      authority figures '
-    choice2Answer: It is important to think critically about decisions you make and
-      to what extent to obey others
+    choice1: 'Authority should be respected at the cost of individual freedom '
+    choice2: 'One''s curiosity and expression of self should outweigh the constraints
+      placed by authority '
+    choice1Answer: 
+    choice1increment: 0
+    choice2Answer: 
+    choice2increment: 0
+  - scenario: 'When dealing with projects are you the type of person who would: '
+    choice1: 'Procrastinate until it is almost due '
+    choice2: 'Start as soon as possible '
+    choice1Answer: 
+    choice1increment: 0
+    choice2Answer: 
+    choice2increment: 0
+  - scenario: Are you guided by
+    choice1: Logic
+    choice2: Emotions
+    choice1Answer: 
+    choice1increment: 0
+    choice2Answer: 
+    choice2increment: 0
+  - scenario: Your mother falls deathly ill. You are greeted by a wizard who is willing
+      to save your mother but it entails having a random person fall ill to the same
+      disease?
+    choice1: 'Refrain from taking the deal, it is unfair to whoever takes her place. '
+    choice2: "Save my mother, she is more important that someone I don\u2019t know. "
+    choice1Answer: 
+    choice1increment: 1
+    choice2Answer: 
+    choice2increment: 0
+  - scenario: You get a call from the doctor notifying you that your mother will be
+      okay. You get a call from a friend saying they have gotten that illness. What
+      do you do?
+    choice1: Keep it a secret from your friend and let the guilt eat you up inside
+    choice2: Be glad that the wizard's cure worked
+    choice1Answer: 
+    choice1increment: 0
+    choice2Answer: 
+    choice2increment: 0
   scenarioText: {fileID: 1432566496}
   choice1Text: {fileID: 1430508209}
   choice2Text: {fileID: 2046908035}
@@ -1114,15 +1169,15 @@ RectTransform:
   m_GameObject: {fileID: 1430508207}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.1744213, y: 1.1744207, z: 1.1744207}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1963789166}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.000015258789, y: 0.5006027}
-  m_SizeDelta: {x: -44, y: -35.75}
+  m_AnchorMin: {x: 0.032, y: 0.034540392}
+  m_AnchorMax: {x: 0.947, y: 0.45145962}
+  m_AnchoredPosition: {x: 0.32999992, y: -0.29000092}
+  m_SizeDelta: {x: -47.15, y: -17.25}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1430508209
 MonoBehaviour:
@@ -1145,7 +1200,7 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 12800000, guid: ad105ce5c1a24a84f87df69819b699f8, type: 3}
-    m_FontSize: 30
+    m_FontSize: 18
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
@@ -1191,12 +1246,12 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1434383141}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.5, y: 0}
-  m_SizeDelta: {x: 0.77001953, y: 0.83999634}
+  m_AnchorMin: {x: 0.12571208, y: 0.29000002}
+  m_AnchorMax: {x: 0.86857206, y: 0.8756178}
+  m_AnchoredPosition: {x: -0.79999924, y: -0.79999924}
+  m_SizeDelta: {x: -2.100006, y: -0.40000153}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1432566496
 MonoBehaviour:
@@ -1219,7 +1274,7 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 12800000, guid: fbe3c09b43ce4304e86e7496c81bb9ed, type: 3}
-    m_FontSize: 36
+    m_FontSize: 18
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 2
@@ -1262,7 +1317,6 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 1982095823}
   - {fileID: 1540071486}
   - {fileID: 1432566495}
   m_Father: {fileID: 1217785375}
@@ -1380,7 +1434,6 @@ GameObject:
   - component: {fileID: 1474681620}
   - component: {fileID: 1474681619}
   - component: {fileID: 1474681618}
-  - component: {fileID: 1474681617}
   - component: {fileID: 1474681616}
   - component: {fileID: 1474681615}
   m_Layer: 5
@@ -1432,20 +1485,6 @@ CanvasGroup:
   m_Interactable: 1
   m_BlocksRaycasts: 1
   m_IgnoreParentGroups: 0
---- !u!114 &1474681617
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1474681613}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b9242969ab3c7f540abb7f880e43c080, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sprite1x: {fileID: 21300000, guid: bdb3c2fa2edce14428c2588d923d9431, type: 3}
-  sprite2x: {fileID: 21300000, guid: f8e0ae8fe4abe4e44bb4a9a89648eea4, type: 3}
-  sprite4x: {fileID: 21300000, guid: ea5374f26645a6843a8727fbebe2cdb0, type: 3}
 --- !u!114 &1474681618
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1552,15 +1591,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.78676474, g: 0.1504109, b: 0.1504109, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: bdb3c2fa2edce14428c2588d923d9431, type: 3}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: 713471564174e4a69ab6a7eaf83a1770, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -1583,7 +1622,6 @@ GameObject:
   - component: {fileID: 1540071486}
   - component: {fileID: 1540071489}
   - component: {fileID: 1540071488}
-  - component: {fileID: 1540071487}
   m_Layer: 5
   m_Name: PanelLayer
   m_TagString: MaterialButtonLayer
@@ -1602,27 +1640,13 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1434383141}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: -84}
   m_SizeDelta: {x: 0, y: 168}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1540071487
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1540071485}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b9242969ab3c7f540abb7f880e43c080, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sprite1x: {fileID: 21300000, guid: bdb3c2fa2edce14428c2588d923d9431, type: 3}
-  sprite2x: {fileID: 21300000, guid: f8e0ae8fe4abe4e44bb4a9a89648eea4, type: 3}
-  sprite4x: {fileID: 21300000, guid: ea5374f26645a6843a8727fbebe2cdb0, type: 3}
 --- !u!114 &1540071488
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1635,15 +1659,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.31617647, g: 0.31617647, b: 0.31617647, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: bdb3c2fa2edce14428c2588d923d9431, type: 3}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: f5119821d7e46484dba945c455e49ae5, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -1669,7 +1693,6 @@ GameObject:
   - component: {fileID: 1963789172}
   - component: {fileID: 1963789171}
   - component: {fileID: 1963789170}
-  - component: {fileID: 1963789169}
   - component: {fileID: 1963789168}
   - component: {fileID: 1963789167}
   m_Layer: 5
@@ -1721,20 +1744,6 @@ CanvasGroup:
   m_Interactable: 1
   m_BlocksRaycasts: 1
   m_IgnoreParentGroups: 0
---- !u!114 &1963789169
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1963789165}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b9242969ab3c7f540abb7f880e43c080, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sprite1x: {fileID: 21300000, guid: bdb3c2fa2edce14428c2588d923d9431, type: 3}
-  sprite2x: {fileID: 21300000, guid: f8e0ae8fe4abe4e44bb4a9a89648eea4, type: 3}
-  sprite4x: {fileID: 21300000, guid: ea5374f26645a6843a8727fbebe2cdb0, type: 3}
 --- !u!114 &1963789170
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1841,15 +1850,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.4699796, g: 0.42647058, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: bdb3c2fa2edce14428c2588d923d9431, type: 3}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: 8288e8c7c6c2c401cbdcb535376bb928, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -1917,100 +1926,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 30, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!1 &1982095822
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 1982095823}
-  - component: {fileID: 1982095827}
-  - component: {fileID: 1982095826}
-  - component: {fileID: 1982095825}
-  - component: {fileID: 1982095824}
-  m_Layer: 5
-  m_Name: Shadow
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1982095823
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1982095822}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1434383141}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 62, y: 62}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1982095824
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1982095822}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 84fb88f80357bf14e8a30b1e2bfda1cf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isOn: 0
-  anim: 0
---- !u!225 &1982095825
-CanvasGroup:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1982095822}
-  m_Enabled: 1
-  m_Alpha: 1
-  m_Interactable: 0
-  m_BlocksRaycasts: 0
-  m_IgnoreParentGroups: 0
---- !u!114 &1982095826
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1982095822}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -765806418, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: ce4b7ac9fc527fa4aaa1abd7fadc4545, type: 3}
-  m_Type: 1
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
---- !u!222 &1982095827
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1982095822}
 --- !u!1 &2004805168
 GameObject:
   m_ObjectHideFlags: 0
@@ -2135,10 +2050,10 @@ RectTransform:
   m_Father: {fileID: 1474681614}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -0.0000038146973}
-  m_SizeDelta: {x: 0.1000061, y: -0.8999939}
+  m_AnchorMin: {x: 0.036000002, y: 0.03786891}
+  m_AnchorMax: {x: 0.94400007, y: 0.455}
+  m_AnchoredPosition: {x: 0.000015258789, y: 0.0000076293945}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2046908035
 MonoBehaviour:
@@ -2161,11 +2076,11 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 12800000, guid: ad105ce5c1a24a84f87df69819b699f8, type: 3}
-    m_FontSize: 30
+    m_FontSize: 18
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 3
-    m_MaxSize: 40
+    m_MinSize: 0
+    m_MaxSize: 46
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1

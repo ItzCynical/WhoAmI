@@ -234,8 +234,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: -140, y: -10}
+  m_AnchoredPosition: {x: 0.0000076294, y: 0}
+  m_SizeDelta: {x: -0.000015259, y: -10}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &217825256
 MonoBehaviour:
@@ -258,10 +258,10 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 12800000, guid: fbe3c09b43ce4304e86e7496c81bb9ed, type: 3}
-    m_FontSize: 14
+    m_FontSize: 15
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 10
+    m_MinSize: 8
     m_MaxSize: 40
     m_Alignment: 4
     m_AlignByGeometry: 0
@@ -394,22 +394,67 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characters:
   - character: Little Red Riding Hood
+    image: {fileID: 2800000, guid: 96f9db4e90c9a42ee8592e3ad25e6253, type: 3}
     alignment: 1
-    description: innocent but naive
+    description: "You represent kind-hearted innocence and all that is good found
+      in youth. Similar to Little Red Riding Hood\u2019s pure nature, you exude this
+      youthful innocence that makes you see the world with unparalleled wonder. It
+      is important to remain open-minded and think critically about your surroundings
+      for you may overlook dangerous ulterior motives in situations around you. Innocence
+      allows one to be free from the mature struggles and obstacles in life however
+      too much innocence and inexperience leads to naivety towards serious topics."
   - character: Bluebeard
+    image: {fileID: 2800000, guid: ebdb35a6d2888420da07a7daafb3a096, type: 3}
     alignment: 0
-    description: powerful but violent
-  - character: Bluebeard's Wife
+    description: You have a powerful nature. Someone who stands at the top of the
+      pyramid, daring to confront any conflict. Similar to Bluebeard, you hold control
+      over others and prove to be notoriously powerful whether physically, emotionally,
+      etc. However, through your power you must be mindful that it is not used with
+      hostile intent. One must be responsible with the power they hold and use it
+      sparingly and peacefully against others.
+  - character: Mrs. Bluebeard
+    image: {fileID: 2800000, guid: 101bf5f53a0954155881528ac83454d8, type: 3}
     alignment: 1
-    description: curious but disobedient
+    description: "You exhibit great curiosity and that is important for making wonderful
+      discoveries and exploring unique ideas. Similar to Bluebeard\u2019s Wife, you
+      search for answers and seek to uncover the mysteries behind questions  you have.
+      While this trait may prove to be useful and allow you to discover secrets obscured
+      by others, it is important to establish boundaries. As the saying goes \u201Ccuriosity
+      killed the cat\u201D, too much curiosity displays disobedience and sometimes
+      oversteps boundaries between people."
   - character: Beauty
+    image: {fileID: 2800000, guid: 4a79953cdb4344986b7e8910e97d0e89, type: 3}
     alignment: 1
-    description: Selfless but stifling
+    description: "Unwavering selflessness towards friends and loved ones. Similar
+      to Beauty and her This is important for maintaining interpersonal relationships
+      and demonstrating your care for others. However, selflessness without moderation
+      neglects the importance of taking care of one\u2019s self and leaves them vulnerable
+      to being taken advantage of by others. It is important to administer self care
+      equivalent to care for others."
   - character: Beast
+    image: {fileID: 2800000, guid: 93d8d5539b30c4378b3d0ef8ef2c6edf, type: 3}
     alignment: 0
-    description: Damaged but compassionate
+    description: Similar to the Beast, you have suffered some hardships and obstacles
+      throughout life. Instead of being hindered by these hardships and obstacles,
+      you persist through the misfortunate. You maintain a sense of compassion for
+      others empathizing with their struggles through several hardships in their life.
+      Through your struggles you understand that others may face something just as
+      difficult, yet you believe and support the good that resides within them regardless
+      of preconceived notions that surround them.
+  - character: Big Bad Wolf
+    image: {fileID: 2800000, guid: 80f159ec3afa4460f96fa918244c3ad1, type: 3}
+    alignment: 0
+    description: 'Cunning and elusive, the Big Bad Wolf draws on his intelligence
+      and  manipulating wits in order to take advantage of others and come out on
+      top. Capable of overcoming any difficulty and elusive enough to achieve his
+      goals no matter how dastardly. Although manipulative and dangerous, the wolf
+      exhibits abundant quick-thinking capabilities that allow him to achieve his
+      goal. Similar to the wolf, your quick-witted and clever nature can be applied
+      to opposite, more positive experiences such as being hired for a job or graduating
+      school. '
   characterText: {fileID: 217825256}
   descriptionText: {fileID: 1432566496}
+  resultBackground: {fileID: 1217785370}
 --- !u!4 &899508233
 Transform:
   m_ObjectHideFlags: 0
@@ -510,6 +555,8 @@ GameObject:
   - component: {fileID: 1217785373}
   - component: {fileID: 1217785372}
   - component: {fileID: 1217785371}
+  - component: {fileID: 1217785377}
+  - component: {fileID: 1217785376}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -605,6 +652,38 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &1217785376
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1217785370}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -98529514, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Texture: {fileID: 0}
+  m_UVRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+--- !u!222 &1217785377
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1217785370}
 --- !u!1 &1419498000
 GameObject:
   m_ObjectHideFlags: 0
@@ -636,10 +715,10 @@ RectTransform:
   m_Father: {fileID: 1217785375}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMin: {x: 0, y: 0.8971775}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -34}
-  m_SizeDelta: {x: -410, y: 40.200012}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: -590.3, y: -10.799999}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1432566494
 GameObject:
@@ -697,7 +776,7 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 12800000, guid: fbe3c09b43ce4304e86e7496c81bb9ed, type: 3}
-    m_FontSize: 36
+    m_FontSize: 15
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 2
@@ -747,9 +826,9 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: 0, y: 100}
-  m_SizeDelta: {x: -43.73, y: 168.84}
+  m_AnchorMax: {x: 1, y: 0.14600001}
+  m_AnchoredPosition: {x: 0, y: 27}
+  m_SizeDelta: {x: -43.7, y: 93.6}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1540071485
 GameObject:
@@ -784,8 +863,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -84}
-  m_SizeDelta: {x: 0, y: 168}
+  m_AnchoredPosition: {x: 0, y: -83.00801}
+  m_SizeDelta: {x: 0, y: 111.1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1540071487
 MonoBehaviour:
@@ -952,7 +1031,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 62, y: 62}
+  m_SizeDelta: {x: 62, y: 0.84004}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1982095824
 MonoBehaviour:

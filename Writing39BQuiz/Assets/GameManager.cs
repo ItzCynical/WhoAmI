@@ -35,6 +35,7 @@ public class GameManager : MonoBehaviour {
 
 	private string good = "good";
 	private string bad = "bad";
+	private string index = "index";
 
 	void Start() 
 	{
@@ -43,6 +44,7 @@ public class GameManager : MonoBehaviour {
 			unansweredQuestions = questions.ToList<Question> ();
 			PlayerPrefs.SetInt(good, 0);
 			PlayerPrefs.SetInt(bad, 0);
+			PlayerPrefs.SetInt(index, 0);
 		}
 		
 		SetCurrentQuestion();
@@ -52,9 +54,13 @@ public class GameManager : MonoBehaviour {
 	{
 		Debug.Log("Good: "+ PlayerPrefs.GetInt(good).ToString());
 		Debug.Log("Bad: "+ PlayerPrefs.GetInt(bad).ToString());
+		Debug.Log("Index: "+ PlayerPrefs.GetInt(index).ToString());
 
-		int randomQuestionIndex = Random.Range (0, unansweredQuestions.Count);
-		currentQuestion = unansweredQuestions [randomQuestionIndex];
+		currentQuestion = unansweredQuestions [PlayerPrefs.GetInt(index)];
+
+		int n = PlayerPrefs.GetInt(index);
+		PlayerPrefs.SetInt(index, n+1);
+		Debug.Log(PlayerPrefs.GetInt(index));
 
 		scenarioText.text = currentQuestion.scenario;
 		choice1Text.text = currentQuestion.choice1;
@@ -65,9 +71,9 @@ public class GameManager : MonoBehaviour {
 	}
 
 	IEnumerator TransitionToNextQuestion () {
-		unansweredQuestions.Remove (currentQuestion);
+		//unansweredQuestions.Remove (currentQuestion);
 
-		if (unansweredQuestions.Count <= 0) {
+		if (PlayerPrefs.GetInt(index) >= unansweredQuestions.Count) {
 
 			yield return new WaitForSeconds (timeBetweenQuestions);
 			
@@ -90,6 +96,9 @@ public class GameManager : MonoBehaviour {
 		int n = PlayerPrefs.GetInt(good);
 		PlayerPrefs.SetInt(good, n+1);
 
+		int m = PlayerPrefs.GetInt(index);
+		PlayerPrefs.SetInt(index, m + currentQuestion.choice1increment);
+
 		animator.SetTrigger ("Choice1");
 		StartCoroutine (TransitionToNextQuestion ());
 	}
@@ -100,6 +109,10 @@ public class GameManager : MonoBehaviour {
 
 		int n = PlayerPrefs.GetInt(bad);
 		PlayerPrefs.SetInt(bad, n+1);
+
+
+		int m = PlayerPrefs.GetInt(index);
+		PlayerPrefs.SetInt(index, m + currentQuestion.choice2increment);
 
 		animator.SetTrigger ("Choice2");
 		StartCoroutine (TransitionToNextQuestion ());
